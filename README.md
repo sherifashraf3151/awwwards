@@ -1,16 +1,66 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Awwwards — Interactive Landing UI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Project Overview
+-: A modern, responsive landing/portfolio interface built with React, Vite, and Tailwind CSS. The project focuses on visual presentation, performance, and a component-driven structure for easy extension.
 
-## React Compiler
+Key Features
+-: Responsive design built with Tailwind CSS.
+-: Component-based architecture under `src/components` for fast iteration and reuse.
+-: Fast development experience using Vite with HMR (Hot Module Replacement).
+-: PostCSS and Tailwind integration for flexible styling.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Tech Stack
+-: React
+-: Vite
+-: Tailwind CSS
+-: PostCSS
+-: Build tooling (esbuild/SWC) depending on configuration
 
-## Expanding the ESLint configuration
+Project Structure (excerpt)
+-: `src/` — application source
+-: `src/App.jsx` — main application layout
+-: `src/main.jsx` — React bootstrap and DOM mount
+-: `src/index.css` — global styles and Tailwind imports
+-: `src/components/` — UI components such as `Hero`, `About`, `Features`, `Story`, `Contact`, `Footer`, `Navbar`, etc.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Local Setup
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start the development server (with HMR):
+
+```bash
+npm run dev
+```
+
+Useful Scripts
+-: Start dev server: `npm run dev`
+-: Build for production: `npm run build`
+-: Preview production build locally: `npm run preview`
+
+Deployment Tips
+-: After `npm run build`, the `dist/` folder is generated and ready to be deployed to static hosts such as Vercel, Netlify, or GitHub Pages.
+
+Future Improvements
+-: Add unit and integration tests (Jest + React Testing Library).
+-: Migrate to TypeScript for stronger type safety and DX improvements.
+-: Configure CI/CD to automate build and deploy workflows.
+
+Contributing
+-: Contributions are welcome. Please open an Issue or a Pull Request with a clear description of changes.
+
+License
+-: Add a `LICENSE` file to specify the project license (MIT, Apache-2.0, etc.).
+
+Contact
+-: For questions or feedback, open an Issue in this repository or reach out through your preferred contact method.
+
+----
+
+Note: The UI components are located in `src/components` and are structured for easy customization and extension to match a portfolio or showcase site.
+
